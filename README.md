@@ -26,7 +26,7 @@ Well, it looks like there is something to the idea that movie lengths have decre
 
 What does this trend look like over a longer period of time?
 Is this explainable by something like the genre of entertainment?
-Upon asking our friend for the original CSV they used to perform their analyses, they gladly oblige and send it. We now have access to the CSV file, available at the path "datasets/netflix_data.csv". Let's create another DataFrame, this time with all of the data. Given the length of our friend's data, printing the whole DataFrame is probably not a good idea, so we will inspect it by printing only the first five rows. View code [here](coding/load_csv):
+Upon asking our friend for the original CSV they used to perform their analyses, they gladly oblige and send it. We now have access to the CSV file, available at the path "datacamp/DATA/netflix_data.csv". Let's create another DataFrame, this time with all of the data. Given the length of our friend's data, printing the whole DataFrame is probably not a good idea, so we will inspect it by printing only the first five rows. View code [here](coding/load_csv):
 
  
 ![image](https://user-images.githubusercontent.com/53232113/170372373-43702ba6-a33c-48f2-a1cb-b0139e94578e.png)

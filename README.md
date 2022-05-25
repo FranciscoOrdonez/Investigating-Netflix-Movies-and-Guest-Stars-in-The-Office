@@ -9,4 +9,20 @@ The dictionary movie_dict looks like:
 
 2. Creating a DataFrame from a dictionary
 To convert our dictionary movie_dict to a pandas DataFrame, we will first need to import the library under its usual alias. We'll also want to inspect our DataFrame to ensure it was created correctly. View code[here](coding/create_df):
+   years  durations
+0   2011        103
+1   2012        101
+2   2013         99
+3   2014        100
+4   2015        100
+5   2016         95
+6   2017         95
+7   2018         96
+8   2019         93
+9   2020         90
+
+3. A visual inspection of our data
+Alright, we now have a pandas DataFrame, the most common way to work with tabular data in Python. Now back to the task at hand. We want to follow up on our friend's assertion that movie lengths have been decreasing over time. A great place to start will be a visualization of the data.
+
+Given that the data is continuous, a line plot would be a good choice, with the dates represented along the x-axis and the average length in minutes along the y-axis. This will allow us to easily spot any trends in movie durations. There are many ways to visualize data in Python, but matploblib.pyplot is one of the most common packages to do so. View code [here](coding/visual_inspection):
 

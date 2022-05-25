@@ -25,10 +25,6 @@ To convert our dictionary movie_dict to a pandas DataFrame, we will first need t
 Alright, we now have a pandas DataFrame, the most common way to work with tabular data in Python. Now back to the task at hand. We want to follow up on our friend's assertion that movie lengths have been decreasing over time. A great place to start will be a visualization of the data.
 
 Given that the data is continuous, a line plot would be a good choice, with the dates represented along the x-axis and the average length in minutes along the y-axis. This will allow us to easily spot any trends in movie durations. There are many ways to visualize data in Python, but matploblib.pyplot is one of the most common packages to do so. View code [here](coding/visual_inspection):
-1	2	3	4
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	 
-![image](https://user-images.githubusercontent.com/53232113/170364672-cb638c6b-d9ad-4c05-8aa6-cb9af965b80c.png)
+![image](https://user-images.githubusercontent.com/53232113/170365285-2e04f716-1148-410a-9de8-b970fce13c88.png)
+
 

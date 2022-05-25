@@ -9,6 +9,7 @@ The dictionary movie_dict looks like:
 
 2. Creating a DataFrame from a dictionary
 To convert our dictionary movie_dict to a pandas DataFrame, we will first need to import the library under its usual alias. We'll also want to inspect our DataFrame to ensure it was created correctly. View code[here](coding/create_df):
+
    years  durations
 0   2011        103
 1   2012        101

@@ -1,0 +1,20 @@
+#USE CLASS to read csv file in a specific path
+
+import pandas as pd
+class CustomETL:
+    def __init__(self,filepath):
+        self.filepath = filepath
+    
+    def read_file(self):
+        self.data = pd.read_csv(self.filepath)
+        return self.data
+        
+        
+## access class with path where file is located
+ac = CustomETL('C:/Users/USUARIO/datacamp/DATA/netflix_data.csv')
+
+# read file in path
+cc_apps = ac.read_file()
+
+# Inspect data
+print(cc_apps.head(5))

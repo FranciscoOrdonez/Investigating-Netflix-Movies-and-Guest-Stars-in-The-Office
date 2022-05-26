@@ -1,0 +1,8 @@
+# Subset the DataFrame for type "Movie"
+netflix_df_movies_only = netflix_df.loc[netflix_df['type'] == 'Movie']
+
+
+netflix_movies_col_subset = netflix_df_movies_only.loc[:,['description','country','genre','release_year','duration']]
+
+# Print the first five rows of the new DataFrame
+print(netflix_movies_col_subset.head(5))

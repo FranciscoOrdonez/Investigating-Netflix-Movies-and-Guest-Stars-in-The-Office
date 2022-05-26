@@ -67,3 +67,23 @@ The first 20 rows for shorter movies are:
 
 ![image](https://user-images.githubusercontent.com/53232113/170407252-159f6543-cf22-471a-8927-64a2008de4bb.png)
 
+8. Marking non-feature films
+Interesting! It looks as though many of the films that are under 60 minutes fall into genres such as "Children", "Stand-Up", and "Documentaries". This is a logical result, as these types of films are probably often shorter than 90 minute Hollywood blockbuster.
+
+We could eliminate these rows from our DataFrame and plot the values again. But another interesting way to explore the effect of these genres on our data would be to plot them, but mark them with a different color. View code [here](coding/color).
+
+The first ten colors are:
+
+![image](https://user-images.githubusercontent.com/53232113/170414003-e060c4cc-44df-4072-b463-69b07ed5e692.png)
+
+9. Plotting with color!
+Lovely looping! We now have a colors list that we can pass to our scatter plot, which should allow us to visually inspect whether these genres might be responsible for the decline in the average duration of movies.
+
+This time, we'll also spruce up our plot with some additional axis labels and a new theme with plt.style.use(). View code [here](coding/plot2).
+
+![image](https://user-images.githubusercontent.com/53232113/170414402-f1c4d577-34ea-4d91-8e71-11f7e7b8de07.png)
+
+10. Conclusions
+Well, as we suspected, non-typical genres such as children's movies and documentaries are all clustered around the bottom half of the plot. But we can't know for certain until we perform additional analyses.
+# Are we certain that movies are getting shorter?
+are_movies_getting_shorter = 'no'

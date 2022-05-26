@@ -43,3 +43,14 @@ Let's put our data subsetting skills to work!
 The result is:
 
 ![image](https://user-images.githubusercontent.com/53232113/170392974-4ac7cf7b-2c3f-4fa5-95e1-5f574778cbf9.png)
+
+6. Creating a scatter plot
+Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.
+
+This time, we are no longer working with aggregates but instead with individual movies. A line plot is no longer a good choice for our data, so let's try a scatter plot instead. We will again plot the year of release on the x-axis and the movie duration on the y-axis. View code [here](coding/scatter).
+
+The plot:
+
+![image](https://user-images.githubusercontent.com/53232113/170395324-42d17c86-979e-437e-bb9d-3979f10d08cf.png)
+
+

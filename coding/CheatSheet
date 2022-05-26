@@ -1,0 +1,48 @@
+1. create a dictionary with two lists
+   list1 = [1,2,3]
+   list2 = [1000,2000,3000]
+   dict1 = {'int1':list1, 'thousands': list2}
+   
+2. creating a pandas dataframe from netflix_df = 
+   import pandas as pdpd.read_csv(self.filepath)
+   df = pd.DataFrame(dict1)
+
+3. create a line plot with DataFrame df using matplotlib.pyplot
+   import matplotlib.pyplot as plt
+   plt.plot(int1,thousands)
+      
+4. read a cvs file a
+   import pandas as pd
+   netflix_df = pd.read_csv('C:/Users/USUARIO/datacamp/DATA/netflix_data.csv')
+   
+5. filter data with type+"Movie" and only some fields: title, country, genre, release_year, and duration
+   # Subset the DataFrame for type "Movie"
+   netflix_df_movies_only = netflix_df.loc[netflix_df['type'] == 'Movie']
+   netflix_movies_col_subset = netflix_df_movies_only.loc[:,['description','country','genre','release_year','duration']]
+      
+6. scatter plot
+   # Create a scatter plot of duration versus year
+   plt.scatter(x=netflix_movies_col_subset['release_year'], y=netflix_movies_col_subset['duration'])
+   
+   
+7. filter our DataFrame for movies with a duration under 60 minutes and look at the genres
+   short_movies = netflix_movies_col_subset[netflix_movies_col_subset['duration']< 60]
+      
+8. create an array 'color' depending on the 'genre' for each movie
+   # Define an empty list
+   colors = []
+   # Iterate over rows of netflix_movies_col_subset
+   for lab,row in netflix_movies_col_subset.iterrows() :
+   if row['genre'] == 'Children':
+        colors.append('red')
+   elif row['genre'] == 'Documentaries':
+        colors.append('blue')
+   elif row['genre'] == 'Stand-Up':
+        colors.append('green')
+   else: 
+        colors.append('black')
+        
+9. create a scatter color plot
+   # Create a scatter plot of duration versus release_year
+   plt.scatter(x=netflix_movies_col_subset['release_year'], y=netflix_movies_col_subset['duration'],c=colors)
+   

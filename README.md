@@ -31,3 +31,15 @@ Upon asking our friend for the original CSV they used to perform their analyses,
  
 ![image](https://user-images.githubusercontent.com/53232113/170372373-43702ba6-a33c-48f2-a1cb-b0139e94578e.png)
 
+5. Filtering for movies!
+Okay, we have our data! Now we can dive in and start looking at movie lengths.
+
+Or can we? Looking at the first five rows of our new DataFrame, we notice a column type. Scanning the column, it's clear there are also TV shows in the dataset! Moreover, the duration column we planned to use seems to represent different values depending on whether the row is a movie or a show (perhaps the number of minutes versus the number of seasons)?
+
+Fortunately, a DataFrame allows us to filter data quickly, and we can select rows where type is Movie. While we're at it, we don't need information from all of the columns, so let's create a new DataFrame netflix_movies containing only title, country, genre, release_year, and duration. View code [here](coding/filter).
+
+Let's put our data subsetting skills to work!
+
+The result is:
+
+![image](https://user-images.githubusercontent.com/53232113/170392974-4ac7cf7b-2c3f-4fa5-95e1-5f574778cbf9.png)

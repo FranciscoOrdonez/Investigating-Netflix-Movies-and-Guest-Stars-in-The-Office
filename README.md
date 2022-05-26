@@ -1,5 +1,5 @@
 # Investigating-Netflix-Movies-and-Guest-Stars-in-The-Office
-This is a guided project from DataCamp with some changes.
+This is a guided project from DataCamp with some changes.  CheatSheet for this project [here](coding/cheatsheet).
 
 Netflix! What started in 1997 as a DVD rental service has since exploded into the largest entertainment/media company by market capitalization, boasting over 200 million subscribers as of January 2021.
 

@@ -1,6 +1,11 @@
 # Investigating-Netflix-Movies-and-Guest-Stars-in-The-Office
 This is a guided project from DataCamp with some changes
 
+Netflix! What started in 1997 as a DVD rental service has since exploded into the largest entertainment/media company by market capitalization, boasting over 200 million subscribers as of January 2021.
+
+Given the large number of movies and series available on the platform, it is a perfect opportunity to flex our data manipulation skills and dive into the entertainment industry. Our friend has also been brushing up on their Python skills and has taken a first crack at a CSV file containing Netflix data. For their first order of business, they have been performing some analyses, and they believe that the average duration of movies has been declining.
+
+As evidence of this, they have provided us with the following information. For the years from 2011 to 2020, the average movie durations are 103, 101, 99, 100, 100, 95, 95, 96, 93, and 90, respectively.
 
 1. Use our friend's data to create a dictionary. To do so, you will need to perform the following steps: Create a list of years from 2011 to 2020 and a list durations of the average movie lengths our friend provided (103, 101, 99, 100, 100, 95, 95, 96, 93, and 90), create a dictionary movie_dict, with the keys "years" and "durations" and the values set to your lists years and durations and print and inspect the dictionary to ensure it was created correctly. View code [here](coding/create_dict)
 
@@ -53,4 +58,12 @@ The plot:
 
 ![image](https://user-images.githubusercontent.com/53232113/170395324-42d17c86-979e-437e-bb9d-3979f10d08cf.png)
 
+7. Digging deeper
+This is already much more informative than the simple plot we created when our friend first gave us some data. We can also see that, while newer movies are overrepresented on the platform, many short movies have been released in the past two decades.
+
+Upon further inspection, something else is going on. Some of these films are under an hour long! Let's filter our DataFrame for movies with a duration under 60 minutes and look at the genres. This might give us some insight into what is dragging down the average. View code [here](coding/less60).
+
+The first 20 rows for shorter movies are:
+
+![image](https://user-images.githubusercontent.com/53232113/170407252-159f6543-cf22-471a-8927-64a2008de4bb.png)
 

@@ -14,7 +14,7 @@ class CustomETL:
 ac = CustomETL('C:/Users/USUARIO/datacamp/DATA/netflix_data.csv')
 
 # read file in path
-cc_apps = ac.read_file()
+netflix_df = ac.read_file()
 
 # Inspect data
-print(cc_apps.head(5))
+print(netflix_df.head(5))

@@ -4,7 +4,8 @@
    dict1 = {'int1':list1, 'thousands': list2}
    
 2. creating a pandas dataframe from netflix_df = 
-   import pandas as pdpd.read_csv(self.filepath)
+   import pandas as pd
+   pd.read_csv(self.filepath)
    df = pd.DataFrame(dict1)
 
 3. create a line plot with DataFrame df using matplotlib.pyplot
